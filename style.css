@@ -27,7 +27,9 @@ body{
 
 /********** UTILITY RULES *************/
 
-
+.btn_buy_now{
+    background-color: var(--btn-primary);
+}
 
 /************ HEADER RULES ***********/
 
@@ -59,5 +61,11 @@ body{
 }
 
 /************ MAIN RULES *************/
+
+.main_hero_image{
+    background-image: url(./img/jumbo-bg.png);
+    background-size: contain;
+    height: 570px;
+}
 
 /************ FOOTER RULES *************/
