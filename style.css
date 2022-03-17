@@ -1,5 +1,9 @@
+/************ COMMON RULES *************/
+
+
 *{
-    --color-nav-primary:#373737;
+    --bg-top-header:#000;
+    --color-nav-primary:#363636;
     --color-nav-secondary:#a3a3a3;
     --btn-primary:#cd3d0f;
     --btn-secondary:#2d64e6;
@@ -16,6 +20,44 @@
     --bg--footer:#00439c;
 }
 
-/* body{
-    width: 98.15vw;
-} */
+body{
+    /* width: 98.15vw; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/********** UTILITY RULES *************/
+
+
+
+/************ HEADER RULES ***********/
+
+.brand{
+    background-color: var(--bg-top-header);
+}
+
+#site_header .navbar-nav .nav-link {
+    color: var(--color-nav-primary);
+}
+
+.dropdown-toggle::after {
+    border-top: 0;
+    border-right: 0;
+}
+
+.bg_color_nav_primary{
+    background-color: var(--color-nav-primary);
+}
+
+.nav_bar i{
+    color: var(--color-nav-secondary);
+    font-size: 11px;
+}
+
+.nav_search>i{
+    font-size: 18px;
+    color: var(--bg-top-header);
+}
+
+/************ MAIN RULES *************/
+
+/************ FOOTER RULES *************/
