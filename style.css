@@ -31,6 +31,14 @@ body{
     background-color: var(--btn-primary);
 }
 
+.bottom_3{
+    bottom: 3rem;
+}
+
+.left_3{
+    left: 3rem;
+}
+
 /************ HEADER RULES ***********/
 
 .brand{
@@ -70,4 +78,14 @@ body{
     background-repeat: no-repeat;
 }
 
+.mini_hero_img img{
+    border-radius: 0.75rem;
+}
+
 /************ FOOTER RULES *************/
+
+
+
+/* media queries */
+
+

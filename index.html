@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
         integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="./style.css">
 
@@ -28,12 +29,20 @@
         </div>
 
         <div class="nav_bar">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <nav class="navbar navbar-expand-lg  navbar-light bg-light">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <img src="./img/play_logo.svg" alt="">
                     </a>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="d-lg-none">
+                        <a class="navbar-brand text-uppercase h6 fs-6 pt-2 text-light" href="#">start bootstrap</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon fs-6 text-light"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                             <li class="nav-item">
@@ -171,15 +180,25 @@
             <div class="container-fluid d-flex">
                 <div class="container ">
 
-                    <div class="row text-light flex-column position-absolute bot-0 left-0">
-                        <div class="col-6  py-4">
+                    <div class="row text-light position-absolute bottom_3 left_3">
+                        <div class="col-12 py-4">
                             <img height="45px" src="./img/returnal-hero-banner-logo.png" alt="">
-                            <h1>Rompi il cerchio</h1>
-                            <p class="pt-3">
-                                Rialzati dopo ogni sconfitta e affronta una nuova sfida con ogni rinascita in questo
-                                esplosivo thriller fantascientifico, disponibile in esclusiva su PS5.
-                            </p>
                         </div>
+                        <div class="row">
+                            <div class="col">
+                                <h1>Rompi il cerchio</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <p class="pt-3">
+                                    Rialzati dopo ogni sconfitta e affronta una nuova sfida con ogni rinascita in questo
+                                    esplosivo thriller fantascientifico, disponibile in esclusiva su PS5.
+                                </p>
+                            </div>
+                        </div>
+
+
 
                         <div class="col-12">
                             <button type="button" class="btn btn_buy_now text-light rounded-pill ">Acquista ora</button>
@@ -198,18 +217,24 @@
             <div class="container-fluid">
                 <div class="container">
                     <div class="row my-4">
-                        <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-                            necessitatibus. adipisicing elit. Deserunt, necessitatibus.</div>
-                        <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-                            necessitatibus. adipisicing elit. Deserunt, necessitatibus.</div>
-                        <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-                            necessitatibus. adipisicing elit. Deserunt, necessitatibus.</div>
-                        <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-                            necessitatibus. adipisicing elit. Deserunt, necessitatibus.</div>
-                        <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-                            necessitatibus. adipisicing elit. Deserunt, necessitatibus.</div>
-                        <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-                            necessitatibus. adipisicing elit. Deserunt, necessitatibus.</div>
+                        <div class="col card border-0">
+                            <img class="" height="100px" src="./img/jumbo-bg.png" alt="">
+                        </div>
+                        <div class="col card border-0">
+                            <img height="100px" src="./img/ratchet-and-clank-rift-apart-keyart.jpg" alt="">
+                        </div>
+                        <div class="col card border-0">
+                            <img height="100px" src="./img/jumbo-bg.png" alt="">
+                        </div>
+                        <div class="col card border-0">
+                            <img height="100px" src="./img/ratchet-and-clank-rift-apart-keyart.jpg" alt="">
+                        </div>
+                        <div class="col card border-0">
+                            <img height="100px" src="./img/jumbo-bg.png" alt="">
+                        </div>
+                        <div class="col card border-0">
+                            <img height="100px" src="./img/ratchet-and-clank-rift-apart-keyart.jpg" alt="">
+                        </div>
                     </div>
                 </div>
                 <!-- /.container -->
