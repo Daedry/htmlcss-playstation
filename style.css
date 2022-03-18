@@ -66,6 +66,7 @@ body{
     background-image: url(./img/jumbo-bg.png);
     background-size: contain;
     height: 570px;
+    background-repeat: no-repeat;
 }
 
 /************ FOOTER RULES *************/
