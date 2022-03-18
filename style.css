@@ -27,9 +27,7 @@ body{
 
 /********** UTILITY RULES *************/
 
-.btn_buy_now{
-    background-color: var(--btn-primary);
-}
+
 
 .bottom_3{
     bottom: 3rem;
@@ -38,6 +36,37 @@ body{
 .left_3{
     left: 3rem;
 }
+
+/* colors */
+
+.btn_primary{
+    background-color: var(--btn-primary);
+}
+
+.btn_secondary{
+    background-color: var(--btn-secondary);
+}
+
+.text_main_primary{
+    color: var(--text-main-primary);
+}
+
+.text_main_secondary{
+    color: var(--text-main-secondary);
+}
+
+.text_main_third{
+    color: var(--text-main-third);
+}
+
+.border_color_bot{
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom:2px solid var(--text-main-third);
+}
+
+
 
 /************ HEADER RULES ***********/
 
