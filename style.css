@@ -27,7 +27,9 @@ body{
 
 /********** UTILITY RULES *************/
 
-
+.w_300{
+    width: 350px;
+}
 
 .bottom_3{
     bottom: 3rem;
@@ -66,7 +68,13 @@ body{
     border-bottom:2px solid var(--text-main-third);
 }
 
+.bg_banner{
+    background-color: var(--text-main-primary);
+}
 
+.radius_1-5{
+    border-radius: 1.5rem;
+}
 
 /************ HEADER RULES ***********/
 
@@ -109,6 +117,14 @@ body{
 
 .mini_hero_img img{
     border-radius: 0.75rem;
+}
+
+.banner_middle{
+    background-image: url(./img/it-takes-two-hero-banner-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 450px;
 }
 
 /************ FOOTER RULES *************/
