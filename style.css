@@ -64,7 +64,8 @@ body{
 
 .main_hero_image{
     background-image: url(./img/jumbo-bg.png);
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     height: 570px;
     background-repeat: no-repeat;
 }
