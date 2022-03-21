@@ -94,7 +94,7 @@ body {
 }
 
 .card_up{
-  transition: 500ms linear;
+  transition: margin-top 500ms linear;
   cursor: pointer;
 }
 
@@ -112,14 +112,22 @@ body {
   padding: 1px 4px;
 }
 
+.btn_border{
+  border: 2px solid transparent;
+}
+
 .btn_border:hover{
-  border: 2px solid rgb(0, 0, 0);
-  box-sizing: border-box;
+  border-color: rgb(0, 0, 0);
+  transition: 200ms;
+}
+
+.btn_border_light{
+  border: 2px solid trasparent;
 }
 
 .btn_border_light:hover{
-  border: 2px solid #bcbec0;
-  box-sizing: border-box;
+  border-color:  #bcbec0;
+  transition: 200ms;
 }
 
 /************ HEADER RULES ***********/
@@ -227,9 +235,13 @@ body {
 }
 
 .mini_hero_img .card{
+  border: 3px solid transparent;
   padding: 0.15rem;
   border-radius: 1.2rem;
+}
 
+.mini_hero_img .card_1{
+  border-color: var(--text-main-third);
 }
 
 .banner_middle {
