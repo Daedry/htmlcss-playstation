@@ -89,6 +89,10 @@ body {
   font-weight: 500;
 }
 
+.btn_border:hover{
+  list-style-type: ;
+}
+
 /************ HEADER RULES ***********/
 
 .brand {
@@ -188,6 +192,16 @@ body {
   border-top: 0;
   border-right: 0;
   border-bottom: 2px solid var(--text-main-third);
+}
+
+.icon-dot.fa-circle{
+  color: #00439c;
+  font-size: 5px;
+  vertical-align: middle;
+}
+
+.sub_menu{
+  margin-bottom: -1rem;
 }
 
 /************ FOOTER RULES *************/
