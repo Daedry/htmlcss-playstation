@@ -1,136 +1,195 @@
 /************ COMMON RULES *************/
 
-
-*{
-    --bg-top-header:#000;
-    --color-nav-primary:#363636;
-    --color-nav-secondary:#a3a3a3;
-    --btn-primary:#cd3d0f;
-    --btn-secondary:#2d64e6;
-    --text-main-primary:#1f1f1f;
-    --text-main-secondary:#7b7b7b;
-    --text-main-third:#157DD2;
-    --bg-main-light:#bebcbb;
-    --bg-main-deep:#161c3b;
-    --icon-tweetter:#1da1f3;
-    --icon-facebook:#1878f3;
-    --icon-instagram-primary:#ba2f97;
-    --icon-instagram-secondary:#fbac60;
-    --icon-youtube:#c5312c;
-    --bg--footer:#00439c;
+* {
+  --bg-top-header: #000;
+  --color-nav-primary: #363636;
+  --color-nav-secondary: #a3a3a3;
+  --btn-primary: #cd3d0f;
+  --btn-secondary: #2d64e6;
+  --btn-light: #d9dadc;
+  --text-main-primary: #1f1f1f;
+  --text-main-secondary: #7b7b7b;
+  --text-main-third: #157dd2;
+  --bg-main-light: #bebcbb;
+  --bg-main-deep: #161c3b;
+  --bg-footer: #00439c;
 }
 
-body{
-    /* width: 98.15vw; */
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/********** UTILITY RULES *************/
-
-.w_300{
-    width: 350px;
-}
-
-.bottom_3{
-    bottom: 3rem;
-}
-
-.left_3{
-    left: 3rem;
+body {
+  /* width: 98.15vw; */
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* colors */
 
-.btn_primary{
-    background-color: var(--btn-primary);
+.btn_primary {
+  background-color: var(--btn-primary);
 }
 
-.btn_secondary{
-    background-color: var(--btn-secondary);
+.btn_secondary {
+  background-color: var(--btn-secondary);
 }
 
-.text_main_primary{
-    color: var(--text-main-primary);
+.btn_light {
+  background-color: var(--btn-light);
 }
 
-.text_main_secondary{
-    color: var(--text-main-secondary);
+.text_main_primary {
+  color: var(--text-main-primary);
 }
 
-.text_main_third{
-    color: var(--text-main-third);
+.text_main_secondary {
+  color: var(--text-main-secondary);
 }
 
-.border_color_bot{
-    border-left: 0;
-    border-top: 0;
-    border-right: 0;
-    border-bottom:2px solid var(--text-main-third);
+.text_main_third {
+  color: var(--text-main-third);
 }
 
-.bg_banner{
-    background-color: var(--text-main-primary);
+.text_main_deep {
+  color: var(--bg-main-deep);
 }
 
-.radius_1-5{
-    border-radius: 1.5rem;
+.bg_main_light {
+  background-color: var(--bg-main-light);
+}
+
+.bg_main_deep {
+  background-color: var(--bg-main-deep);
+}
+
+.bg_banner {
+  background-color: var(--text-main-primary);
+}
+
+.bg_footer {
+  background-color: var(--bg-footer);
+}
+
+/********** UTILITY RULES *************/
+
+.w_300 {
+  width: 350px;
+}
+
+.w_60 {
+  width: 60%;
+}
+
+.reg {
+  font-size: 17px;
+  vertical-align: super;
+}
+
+.radius_1-5 {
+  border-radius: 1.5rem;
+}
+
+.fw_500 {
+  font-weight: 500;
 }
 
 /************ HEADER RULES ***********/
 
-.brand{
-    background-color: var(--bg-top-header);
+.brand {
+  background-color: var(--bg-top-header);
 }
 
 #site_header .navbar-nav .nav-link {
-    color: var(--color-nav-primary);
+  color: var(--color-nav-primary);
+}
+
+.dropdown-toggle{
+  display: flex;
+  align-items: center;
 }
 
 .dropdown-toggle::after {
-    border-top: 0;
-    border-right: 0;
+  border-top: 0;
+  border-right: 0;
+  font: var(--fa-font-solid);
+  content: "\f107";
+  font-size: 13px;
+  color: var(--color-nav-secondary);
+
 }
 
-.bg_color_nav_primary{
-    background-color: var(--color-nav-primary);
+.dropdown-toggle.show::after {
+  font: var(--fa-font-solid);
+  content: "\f106";
+  font-size: 13px;
 }
 
-.nav_bar i{
-    color: var(--color-nav-secondary);
-    font-size: 11px;
+
+.bg_color_nav_primary {
+  background-color: var(--color-nav-primary);
 }
 
-.nav_search>i{
-    font-size: 18px;
-    color: var(--bg-top-header);
+.nav_bar i {
+  color: var(--color-nav-secondary);
+  font-size: 11px;
+}
+
+.nav_search > i {
+  font-size: 18px;
+  color: var(--bg-top-header);
+}
+
+.dropdown-menu {
+  border: 0;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.dropdown-menu[data-bs-popper] {
+  margin-top: 0;
+}
+
+.offcanvas-header {
+  padding-bottom: 0;
+}
+
+.offcanvas-body {
+  padding-top: 0.25rem;
+}
+
+.offcanvas-end {
+  top: 6.5rem;
+  width:100%;
+  height: 480px;
 }
 
 /************ MAIN RULES *************/
 
-.main_hero_image{
-    background-image: url(./img/jumbo-bg.png);
-    background-size: cover;
-    background-position: center;
-    height: 570px;
-    background-repeat: no-repeat;
+.main_hero_image {
+  background-image: url(./img/jumbo-bg.png);
+  background-size: cover;
+  background-position: center;
+  height: 570px;
+  background-repeat: no-repeat;
 }
 
-.mini_hero_img img{
-    border-radius: 0.75rem;
+.mini_hero_img img {
+  border-radius: 0.75rem;
 }
 
-.banner_middle{
-    background-image: url(./img/it-takes-two-hero-banner-desktop.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 450px;
+.banner_middle {
+  background-image: url(./img/it-takes-two-hero-banner-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 450px;
+}
+
+.border_color_bot {
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px solid var(--text-main-third);
 }
 
 /************ FOOTER RULES *************/
 
-
-
 /* media queries */
-
-
