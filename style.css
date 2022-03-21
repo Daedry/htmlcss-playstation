@@ -89,6 +89,10 @@ body {
   font-weight: 500;
 }
 
+.op_7{
+  filter: opacity(0.7);
+}
+
 .sub_menu_img:hover {
   box-shadow:2px 2px 5px 5px var(--bg-main-light), -2px -2px 5px var(--color-nav-secondary);
 }
@@ -129,6 +133,8 @@ body {
   border-color:  #bcbec0;
   transition: 200ms;
 }
+
+
 
 /************ HEADER RULES ***********/
 
@@ -222,6 +228,8 @@ body {
 
 /************ MAIN RULES *************/
 
+/* MAIN_HERO_IMAGE */
+
 .main_hero_image {
   background-image: url(./img/jumbo-bg.png);
   background-size: cover;
@@ -229,6 +237,8 @@ body {
   height: 570px;
   background-repeat: no-repeat;
 }
+
+/* MINI_HERO_IMG */
 
 .mini_hero_img img{
   border-radius: 1rem;
@@ -244,6 +254,40 @@ body {
   border-color: var(--text-main-third);
 }
 
+/* ACCESSORIES */
+
+.accessories .card{
+  cursor: pointer;
+}
+
+.border_color_bot,
+.border_color_bot_tr {
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px solid var(--text-main-third);
+}
+
+.border_color_bot_tr{
+  border-color: transparent;
+  transition: border-color 200ms;
+}
+
+.card:target{
+  border-color: var(--text-main-third);
+}
+
+.accessories .card:hover {
+  filter: opacity(1);
+  border-color: var(--text-main-third);
+ 
+}
+
+
+
+
+/* BANNER_MIDDLE */
+
 .banner_middle {
   background-image: url(./img/it-takes-two-hero-banner-desktop.jpg);
   background-size: cover;
@@ -251,14 +295,6 @@ body {
   background-repeat: no-repeat;
   height: 450px;
 }
-
-.border_color_bot {
-  border-left: 0;
-  border-top: 0;
-  border-right: 0;
-  border-bottom: 2px solid var(--text-main-third);
-}
-
 
 
 /************ FOOTER RULES *************/
