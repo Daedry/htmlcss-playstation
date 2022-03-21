@@ -1,6 +1,6 @@
 /************ COMMON RULES *************/
 
-* {
+:root{
   --bg-top-header: #000;
   --color-nav-primary: #363636;
   --color-nav-secondary: #a3a3a3;
@@ -16,7 +16,7 @@
 }
 
 body {
-  /* width: 98.15vw; */
+  width: 98.15vw;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -89,8 +89,37 @@ body {
   font-weight: 500;
 }
 
+.sub_menu_img:hover {
+  box-shadow:2px 2px 5px 5px var(--bg-main-light), -2px -2px 5px var(--color-nav-secondary);
+}
+
+.card_up{
+  transition: 500ms linear;
+  cursor: pointer;
+}
+
+.card_up:hover{
+  margin-top:-1rem;
+}
+
+.btn_out{
+  border:2px solid var(--btn-primary);
+  padding: 1px 4px;
+}
+
+.btn_out_light{
+  border: 1px solid white;
+  padding: 1px 4px;
+}
+
 .btn_border:hover{
-  list-style-type: ;
+  border: 2px solid rgb(0, 0, 0);
+  box-sizing: border-box;
+}
+
+.btn_border_light:hover{
+  border: 2px solid #bcbec0;
+  box-sizing: border-box;
 }
 
 /************ HEADER RULES ***********/
@@ -165,6 +194,24 @@ body {
   height: 480px;
 }
 
+.icon-dot.fa-circle{
+  color: #00439c;
+  font-size: 5px;
+  vertical-align: middle;
+}
+
+.sub_menu{
+  margin-bottom: -0.4rem;
+}
+
+.dropdown-item {
+  padding: 0;
+}
+
+.dropdown-item:hover{
+  background-color: white;
+}
+
 /************ MAIN RULES *************/
 
 .main_hero_image {
@@ -175,8 +222,14 @@ body {
   background-repeat: no-repeat;
 }
 
-.mini_hero_img img {
-  border-radius: 0.75rem;
+.mini_hero_img img{
+  border-radius: 1rem;
+}
+
+.mini_hero_img .card{
+  padding: 0.15rem;
+  border-radius: 1.2rem;
+
 }
 
 .banner_middle {
@@ -194,15 +247,7 @@ body {
   border-bottom: 2px solid var(--text-main-third);
 }
 
-.icon-dot.fa-circle{
-  color: #00439c;
-  font-size: 5px;
-  vertical-align: middle;
-}
 
-.sub_menu{
-  margin-bottom: -1rem;
-}
 
 /************ FOOTER RULES *************/
 
